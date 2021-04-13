@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import UserNameForm from './components/UserNameForm';
 
 class App extends Component {
-  render() {
-    return <h1>Slack</h1>
-  }
+	render() {
+		return <UserNameForm onSubmit={(username) => alert(username)} />;
+	}
 }
 
-export default App
+export default App;
